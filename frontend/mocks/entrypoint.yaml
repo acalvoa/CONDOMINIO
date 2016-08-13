@@ -1,0 +1,54 @@
+- request:
+    url: /v1/entrypoint
+    method: GET
+  response:
+    latency: 500
+    file: 'mocks/entrypoint.json'
+    status: 200
+    headers:
+      content-type: application/json
+      charset: utf8
+
+- request:
+    url: /v1/login
+    method: POST
+  response:
+    latency: 500
+    file: 'mocks/login.json'
+    status: 200
+    headers:
+      content-type: application/json
+      charset: utf8
+
+- request:
+    url: /v1/condominios/1/dashboards/1
+    method: GET
+  response:
+    latency: 500
+    file: 'mocks/dashboard.json'
+    status: 200
+    headers:
+      content-type: application/json
+      charset: utf8
+
+- request:
+    url: /v1/condominios/1/rendiciones/45
+    method: GET
+  response:
+    latency: 500
+    file: 'mocks/rendiciones.json'
+    status: 200
+    headers:
+      content-type: application/json
+      charset: utf8
+
+- request:
+    url: /v1/condominios/1/cobranzas/45
+    method: GET
+  response:
+    latency: 500
+    file: 'mocks/cobranzas.json'
+    status: 200
+    headers:
+      content-type: application/json
+      charset: utf8

@@ -1,0 +1,10 @@
+{
+  "_links": {
+    "self": {
+      "href": "/v1/login"
+    },
+    "page": {
+      "href": "/v1/condominio/1/dashboard/1"
+    }
+  }
+}

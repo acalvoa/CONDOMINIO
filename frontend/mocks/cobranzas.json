@@ -1,0 +1,112 @@
+{
+  "caption": "Cobranza Marzo - 2016",
+  "height": 400,
+  "hiddengrid": false,
+  "hidegrid": false,
+  "grouping": false,
+  "colNames": [
+    "id",
+    "Departamento",
+    "Torre",
+    "% de Dominio",
+    "Gastos Comunes",
+    "Cobro Fonde Reserva 5%",
+    "Lectura Anterior 02/2016",
+    "Lectura Actual 03/2016",
+    "Agua Caliente M3",
+    "Agua Caliente $",
+    "Multa e Intereses",
+    "Morosidad",
+    "Diferencias a favor",
+    "Transbank",
+    "Total",
+    "Observaciones"
+  ],
+  "colModel": [
+    {
+      "name": "id",
+      "index": "id",
+      "hidden": true
+    },
+    {
+      "name": "departamento",
+      "index": "departamento"
+    },
+    {
+      "name": "torre",
+      "index": "torre"
+    },
+    {
+      "name": "dominio",
+      "index": "dominio"
+    },
+    {
+      "name": "gastos",
+      "index": "gastos"
+    },
+    {
+      "name": "cobro",
+      "index": "cobro"
+    },
+    {
+      "name": "anterior",
+      "index": "anterior"
+    },
+    {
+      "name": "actual",
+      "index": "actual"
+    },
+    {
+      "name": "aguam",
+      "index": "aguam"
+    },
+    {
+      "name": "aguap",
+      "index": "aguap"
+    },
+    {
+      "name": "multa",
+      "index": "multa"
+    },
+    {
+      "name": "morosidad",
+      "index": "morosidad"
+    },
+    {
+      "name": "diferencias",
+      "index": "diferencias"
+    },
+    {
+      "name": "transbank",
+      "index": "transbank"
+    },
+    {
+      "name": "total",
+      "index": "total"
+    },
+    {
+      "name": "observaciones",
+      "index": "observaciones"
+    }
+  ],
+  "data": [
+    {
+      "id": "1",
+      "departamento": "101",
+      "torre": "101",
+      "dominio": "101",
+      "gastos": "101",
+      "cobro": "101",
+      "anterior": "101",
+      "actual": "101",
+      "aguam": "101",
+      "aguap": "101",
+      "multa": "101",
+      "morosidad": "101",
+      "diferencias": "101",
+      "transbank": "101",
+      "total": "101",
+      "observaciones": "101"
+    }
+  ]
+}

@@ -1,0 +1,100 @@
+<!-- MAIN CONTENT -->
+<div id="content">
+
+  <!-- widget grid -->
+  <section widget-grid id="widget-grid">
+    <div class="row">
+      <article class="col-sm-12">
+
+        <div jarvis-widget id="standard-datatable-widget" data-widget-color="darken" data-widget-editbutton="false">
+          <header>
+            <span class="widget-icon"> <i class="fa fa-table"></i> </span>
+            <h2>Lista de Contratos</h2>
+          </header>
+          <div>
+            <div class="widget-body no-padding">
+              <table datatable dt-options="datatables.standardOptions" dt-columns="datatables.standardColumns" class="table table-striped table-bordered table-hover" width="100%">
+                <thead>
+                  <tr>
+                    <!--<th data-hide="phone">ID</th> -->
+                    <th data-hide="phone">Servicio</th>
+                    <th data-hide="phone">Departamento</th>
+                    <th data-hide="phone,tablet"><i class="fa fa-fw fa-calendar txt-color-blue hidden-md hidden-sm hidden-xs"></i>Fecha Lectura</th>
+                    <th data-hide="phone">Lectura</th>
+                  </tr>
+                </thead>
+
+              </table>
+
+            </div>
+          </div>
+        </div>
+
+
+        <div jarvis-widget id="standard-datatable-widget" data-widget-color="darken" data-widget-editbutton="false">
+          <header>
+            <span class="widget-icon"> <i class="fa fa-table"></i> </span>
+            <h2>Formulario de Contratos </h2>
+          </header>
+
+          <div>
+
+
+            <form action="/api/plug" method="post" id="contact-form" class="smart-form">
+              <header>Contacts form</header>
+
+              <fieldset>
+                <div class="row">
+                  <section class="col col-3">
+                    <label class="label">Servicio</label>
+                    <label class="select">
+                      <select name="servicio">
+                        <option value="" selected="" disabled="">Selecciona un Servicio</option>
+                      </select> <i></i>
+                    </label>
+                  </section>
+
+                  <section class="col col-3">
+                    <label class="label">edificio</label>
+                    <label class="select">
+                      <select name="edificio">
+                        <option value="" selected="" disabled="">Selecciona un departamento</option>
+                      </select> <i></i>
+                    </label>
+                  </section>
+
+                  <section class="col col-3">
+                    <label class="label">Departamento</label>
+                    <label class="select">
+                      <select name="departamento">
+                        <option value="" selected="" disabled="">Selecciona un departamento</option>
+                      </select> <i></i>
+                    </label>
+                  </section>
+
+                  <section class="col col-3">
+                    <label class="label">Lectura</label>
+                    <label class="input">
+                      <i class="icon-append fa fa-edit"></i>
+                      <input type="text" name="lectura" id="lectura">
+                    </label>
+                  </section>
+                </div>
+
+                <footer>
+                  <button type="submit" class="btn btn-primary">Guardar</button>
+                </footer>
+
+                <div class="message">
+                  <i class="fa fa-thumbs-up"></i>
+
+                  <p>El registro de envió correctamente!</p>
+                </div>
+            </form>
+          </div>
+
+
+      </article>
+    </div>
+  </section>
+</div>
