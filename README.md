@@ -8,4 +8,4 @@
 ## Estado
 
 1. El sistema frontend no se encuentra integrado, ya que se estan modificando las directivas para integrar el acceso por sesiones de usuario al modo de usuario.
-2. EL CRUD de administracion sera reemplazado por un panel de administración en modo root.
+2. El CRUD de administracion sera reemplazado por un panel de administración en modo root.
