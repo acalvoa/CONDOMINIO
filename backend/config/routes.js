@@ -17,7 +17,7 @@
  * CoffeeScript for the front-end.
  *
  * For more information on configuring custom routes, check out:
- * http://sailsjs.org/#!/documentation/concepts/Routes/RouteTargetSyntax.html
+ * http://sailsjs.org/#!/documentation/concepts/Routes/RouteTarGETSyntax.html
  */
 
 module.exports.routes = {
@@ -32,9 +32,17 @@ module.exports.routes = {
   *                                                                          *
   ***************************************************************************/
 
-  '/': {
-    view: 'homepage'
-  }
+  '/': 'HomeController.index',
+  'GET /login': 'AuthController.login',
+  '/logout': 'AuthController.logout',
+  'GET /register': 'AuthController.register',
+
+  'POST /auth/local': 'AuthController.callback',
+  'POST /auth/local/:action': 'AuthController.callback',
+
+  'GET /auth/:provider': 'AuthController.provider',
+  'GET /auth/:provider/callback': 'AuthController.callback',
+  'GET /auth/:provider/:action': 'AuthController.callback',
 
   /***************************************************************************
   *                                                                          *
