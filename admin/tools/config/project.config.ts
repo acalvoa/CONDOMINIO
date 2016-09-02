@@ -20,7 +20,7 @@ export class ProjectConfig extends SeedConfig {
     // Add `NPM` third-party libraries to be injected/bundled.
     this.NPM_DEPENDENCIES = [
       ...this.NPM_DEPENDENCIES,
-      {src: 'angular2-sails/dist/sails.io.js', inject: 'libs'},
+      {src: 'sails.io.js/sails.io.js', inject: 'libs'},
       // {src: 'lodash/lodash.min.js', inject: 'libs'},
     ];
 
