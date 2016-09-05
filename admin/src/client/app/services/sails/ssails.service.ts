@@ -6,6 +6,6 @@ import { SailsService } from 'angular2-sails';
 export class SailService {
 	constructor(public Sails: SailsService){
 		console.log("Cargando Sails...");
-		this.Sails.connect("http://localhost:1337");
+		this.Sails.connect("http://teamnodes.com:1337");
 	}
 }

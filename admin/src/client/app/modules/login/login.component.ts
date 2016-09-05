@@ -32,7 +32,7 @@ export class LoginComponent {
             (resData) => {
             	if(resData.status == 1){
             		this.user.regAuth(resData.user);
-            		this.router.navigate(['dashboard']);
+            		this.router.navigate(['admin']);
             	}
             	else
             	{
