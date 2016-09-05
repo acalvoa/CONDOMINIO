@@ -41,7 +41,13 @@ export class HomeComponent {
   			{name:'Ciudades', route:'/admin/ciudad'},
   			{name:'Comunas', route:'/admin/comuna'},
   		]
-  	}];
+  	},{
+      name: 'Personas',
+      activate: false,
+      child:[
+        {name:'Residentes', route:'/admin/residentes'},
+      ]
+    }];
   	constructor(private user:UserService, private router:Router) {
   		this.selectedMenu = this.category[0];
   	}

@@ -4,7 +4,7 @@ import { HomeComponent } from './index';
 import { DashboardComponent } from './index';
 import { CiudadComponent, LoginComponent, ComunaComponent, EdificioComponent, 
 		CondominioComponent,AdministradorComponent, ConserjeComponent, DepartamentoComponent, 
-		EstacionamientoComponent, BodegaComponent} from './index';
+		EstacionamientoComponent, BodegaComponent, ResidentesComponent} from './index';
 import { ActivateProv } from '../services/index';
 
 export const ModRoutes: Routes = [
@@ -15,6 +15,7 @@ export const ModRoutes: Routes = [
 	  	children: [
 	  	  { path: '',  component: DashboardComponent , canActivate: [ActivateProv]},
 	  	  { path: 'edificio',  component: EdificioComponent, canActivate: [ActivateProv]},
+	  	  { path: 'residentes',  component: ResidentesComponent},
 	  	  { path: 'departamento',  component: DepartamentoComponent, canActivate: [ActivateProv]},
 	  	  { path: 'administrador',  component: AdministradorComponent, canActivate: [ActivateProv]},
 	  	  { path: 'condominio',  component: CondominioComponent, canActivate: [ActivateProv]},
