@@ -189,6 +189,7 @@ passport.connect = function (req, query, profile, next) {
  * @param  {Object} res
  */
 passport.endpoint = function (req, res) {
+
   var strategies = sails.config.passport
     , provider   = req.param('provider')
     , options    = {};
@@ -209,7 +210,7 @@ passport.endpoint = function (req, res) {
   //     /auth/:provider/callback
   this.authenticate(provider, options)(req, res, req.next);
 };
-
+3
 /**
  * Create an authentication callback endpoint
  *
@@ -223,7 +224,6 @@ passport.endpoint = function (req, res) {
 passport.callback = function (req, res, next) {
   var provider = req.param('provider', 'local')
     , action   = req.param('action');
-
   // Passport.js wasn't really built for local user registration, but it's nice
   // having it tied into everything else.
   if (provider === 'local' && action !== undefined) {

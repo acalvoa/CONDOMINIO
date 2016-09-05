@@ -1,0 +1,176 @@
+<!-- RIBBON -->
+<div id="ribbon">
+
+	<!-- breadcrumb -->
+	<ol class="breadcrumb">
+		<li>Home</li>
+		<li>Comunas</li>
+	</ol>
+	<!-- end breadcrumb -->
+
+	<!-- You can also add more buttons to the
+	ribbon for further usability
+
+	Example below:
+
+	<span class="ribbon-button-alignment pull-right" style="margin-right:25px">
+		<a href="#" id="search" class="btn btn-ribbon hidden-xs" data-title="search"><i class="fa fa-grid"></i> Change Grid</a>
+		<span id="add" class="btn btn-ribbon hidden-xs" data-title="add"><i class="fa fa-plus"></i> Add</span>
+		<button id="search" class="btn btn-ribbon" data-title="search"><i class="fa fa-search"></i> <span class="hidden-mobile">Search</span></button>
+	</span> -->
+
+</div>
+<!-- END RIBBON -->
+<div class="col-lg-12 col-xs-12 col-sm-12 col-md-12">
+<br>
+<article class="col-sm-12 col-md-12 col-lg-12 sortable-grid ui-sortable">
+				
+							<!-- Widget ID (each widget will need unique ID)-->
+							<div class="jarviswidget jarviswidget-sortable" id="wid-id-1" data-widget-colorbutton="false" data-widget-editbutton="false" data-widget-custombutton="false" role="widget">
+								<!-- widget options:
+								usage: <div class="jarviswidget" id="wid-id-0" data-widget-editbutton="false">
+				
+								data-widget-colorbutton="false"
+								data-widget-editbutton="false"
+								data-widget-togglebutton="false"
+								data-widget-deletebutton="false"
+								data-widget-fullscreenbutton="false"
+								data-widget-custombutton="false"
+								data-widget-collapsed="true"
+								data-widget-sortable="false"
+				
+								-->
+								<header role="heading"><div class="jarviswidget-ctrls" role="menu">   <a href="javascript:void(0);" class="button-icon jarviswidget-toggle-btn" rel="tooltip" title="" data-placement="bottom" data-original-title="Collapse"><i class="fa fa-minus "></i></a> <a href="javascript:void(0);" class="button-icon jarviswidget-fullscreen-btn" rel="tooltip" title="" data-placement="bottom" data-original-title="Fullscreen"><i class="fa fa-expand "></i></a> <a href="javascript:void(0);" class="button-icon jarviswidget-delete-btn" rel="tooltip" title="" data-placement="bottom" data-original-title="Delete"><i class="fa fa-times"></i></a></div>
+									<span class="widget-icon"> <i class="fa fa-edit"></i> </span>
+									<h2>Comunas </h2>
+				
+								<span class="jarviswidget-loader"><i class="fa fa-refresh fa-spin"></i></span></header>
+				
+								<!-- widget div-->
+								<div role="content">
+								<!-- widget edit box -->
+									<div class="jarviswidget-editbox">
+										<!-- This area used as dropdown edit box -->
+				
+									</div>
+									<!-- end widget edit box -->
+				
+									<!-- widget content -->
+									<div class="widget-body no-padding">
+<table class="table table-striped table-bordered" [mfData]="data" #mf="mfDataTable" [mfRowsOnPage]="5">
+    <thead>
+    <tr>
+        <th style="width: 20%">
+            <mfDefaultSorter by="name">Numero</mfDefaultSorter>
+        </th>
+        <th style="width: 50%">
+            <mfDefaultSorter by="email">Nombre de Comuna</mfDefaultSorter>
+        </th>
+        <th style="width: 50%">
+            <mfDefaultSorter by="email">Nombre de la Ciudad</mfDefaultSorter>
+        </th>
+        <th style="width: 50%">
+            <mfDefaultSorter by="delete">Borrar</mfDefaultSorter>
+        </th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr *ngFor="let item of mf.data">
+        <td>{{item.id}}</td>
+        <td>{{item.nombre}}</td>
+        <td>{{item.ciudad.nombre}}</td>
+        <td><span class="cursor" (click)="destroy(item)"><i class="fa fa-trash" aria-hidden="true"></i></span></td>
+    </tr>
+    </tbody>
+    <tfoot>
+    <tr>
+        <td colspan="4">
+            <mfBootstrapPaginator [rowsOnPageSet]="[5,10,25]"></mfBootstrapPaginator>
+        </td>
+    </tr>
+    </tfoot>
+</table>
+</div>
+</div>
+</div>
+</article>
+<article class="col-sm-12 col-md-12 col-lg-12 sortable-grid ui-sortable">
+				
+							<!-- Widget ID (each widget will need unique ID)-->
+							<div class="jarviswidget jarviswidget-sortable" id="wid-id-1" data-widget-colorbutton="false" data-widget-editbutton="false" data-widget-custombutton="false" role="widget">
+								<!-- widget options:
+								usage: <div class="jarviswidget" id="wid-id-0" data-widget-editbutton="false">
+				
+								data-widget-colorbutton="false"
+								data-widget-editbutton="false"
+								data-widget-togglebutton="false"
+								data-widget-deletebutton="false"
+								data-widget-fullscreenbutton="false"
+								data-widget-custombutton="false"
+								data-widget-collapsed="true"
+								data-widget-sortable="false"
+				
+								-->
+								<header role="heading"><div class="jarviswidget-ctrls" role="menu">   <a href="javascript:void(0);" class="button-icon jarviswidget-toggle-btn" rel="tooltip" title="" data-placement="bottom" data-original-title="Collapse"><i class="fa fa-minus "></i></a> <a href="javascript:void(0);" class="button-icon jarviswidget-fullscreen-btn" rel="tooltip" title="" data-placement="bottom" data-original-title="Fullscreen"><i class="fa fa-expand "></i></a> <a href="javascript:void(0);" class="button-icon jarviswidget-delete-btn" rel="tooltip" title="" data-placement="bottom" data-original-title="Delete"><i class="fa fa-times"></i></a></div>
+									<span class="widget-icon"> <i class="fa fa-edit"></i> </span>
+									<h2>Agregar Nueva Ciudad </h2>
+				
+								<span class="jarviswidget-loader"><i class="fa fa-refresh fa-spin"></i></span></header>
+				
+								<!-- widget div-->
+								<div role="content">
+				
+									<!-- widget edit box -->
+									<div class="jarviswidget-editbox">
+										<!-- This area used as dropdown edit box -->
+				
+									</div>
+									<!-- end widget edit box -->
+				
+									<!-- widget content -->
+									<div class="widget-body no-padding">
+				
+										<form class="smart-form">
+				
+											<fieldset>
+												<form name="addcity">
+												<section>
+													<label class="label">Nombre de Comuna</label>
+													<label class="input">
+														<input [(ngModel)]="comuna" name="comuna" type="text" class="input-sm" value="{{comuna}}">
+													</label>
+												</section>
+												<section>
+													<label class="label">Nombre de Ciudad</label>
+													<label class="input">
+														<select [(ngModel)]="city" name="city" (change)="paramChange(1,$event.target)">
+															<option value="-1">Seleccione una Ciudad</option>
+															<option *ngFor="let city of cityname" value="{{city.id}}">{{city.nombre}}</option>
+														</select>	
+													</label>
+												</section>
+												</form>
+											</fieldset>
+				
+											<footer>
+												<button type="submit" class="btn btn-primary" (click)="newcomuna()">
+													Crear Ciudad
+												</button>
+												<button type="button" class="btn btn-default" (click)="clean()">
+													Limpiar
+												</button>
+											</footer>
+										</form>
+				
+									</div>
+									<!-- end widget content -->
+				
+								</div>
+								<!-- end widget div -->
+				
+							</div>
+							<!-- end widget -->
+				
+						</article>
+
+</div>

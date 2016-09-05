@@ -1,0 +1,150 @@
+<html lang="en-us" id="extr-page">
+	<head>
+		<!-- #CSS Links -->
+		<!-- Basic Styles -->
+		<link rel="stylesheet" type="text/css" media="screen" href="/assets/css/bootstrap.min.css">
+
+		<!-- SmartAdmin Styles : Caution! DO NOT change the order -->
+		<link rel="stylesheet" type="text/css" media="screen" href="/assets/css/smartadmin-production.min.css">
+		<link rel="stylesheet" type="text/css" media="screen" href="/assets/css/smartadmin-skins.min.css">
+
+		<!-- SmartAdmin RTL Support -->
+		<link rel="stylesheet" type="text/css" media="screen" href="/assets/css/smartadmin-rtl.min.css"> 
+
+		<!-- We recommend you use "your_style.css" to override SmartAdmin
+		     specific styles this will also ensure you retrain your customization with each SmartAdmin update.
+		<link rel="stylesheet" type="text/css" media="screen" href="css/your_style.css"> -->
+
+	</head>
+	
+	<body class="animated fadeInDown">
+
+		<header id="header">
+
+			<div id="logo-group">
+				<span id="logo"> <img src="/assets/img/logo.png" alt="SmartAdmin"> </span>
+			</div>
+
+			<!-- <span id="extr-page-header-space"> <span class="hidden-mobile hidden-xs">Need an account?</span> <a href="register.html" class="btn btn-danger">Create account</a> </span> -->
+
+		</header>
+
+		<div id="main" role="main">
+
+			<!-- MAIN CONTENT -->
+			<div id="content" class="container">
+
+				<div class="row">
+					<div class="col-xs-12 col-sm-12 col-md-7 col-lg-8 hidden-xs hidden-sm">
+						<h1 class="txt-color-red login-header-big">Admin - Sistema de Condominios</h1>
+						<p>Backend del sistema de gestion de condominio. v0.2</p>
+						<div class="hero">
+
+							<div class="pull-left login-desc-box-l">
+								<h4 class="paragraph-header"></h4>
+								<div class="login-app-icons">
+									<a href="javascript:void(0);" class="btn btn-danger btn-sm">Video Demo</a>
+								</div>
+							</div>
+							
+							<img src="/assets/img/demo/iphoneview.png" class="pull-right display-image" alt="" style="width:210px">
+
+						</div>
+
+						<div class="row">
+							<div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+								<h5 class="about-heading">Administración Facilitada</h5>
+								<p>
+									Se han implementado nuevas caracteristicas que permiten efectuar las labores de backend de forma facilitada.
+								</p>
+							</div>
+							<div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+								<h5 class="about-heading">No mas Backend inseguro.</h5>
+								<p>
+									Las nuevas funciones permiten efectuar operaciones seguras sobre una base de servicios REST mediado por credenciales. Estos mecanismos evitan la escritura directa de la base de datos.
+								</p>
+							</div>
+						</div>
+
+					</div>
+					<div class="col-xs-12 col-sm-12 col-md-5 col-lg-4">
+						<div class="well no-padding">
+							<form action="index.html" id="login-form" class="smart-form client-form">
+								<header>
+									Sign In
+								</header>
+
+								<fieldset>
+									
+									<section>
+										<label class="label">E-mail</label>
+										<label class="input"> <i class="icon-append fa fa-user"></i>
+											<input type="email" [(ngModel)]="username" name="email">
+											<b class="tooltip tooltip-top-right"><i class="fa fa-user txt-color-teal"></i> Please enter email address/username</b></label>
+									</section>
+
+									<section>
+										<label class="label">Password</label>
+										<label class="input"> <i class="icon-append fa fa-lock"></i>
+											<input [(ngModel)]="password" type="password" name="password">
+											<b class="tooltip tooltip-top-right"><i class="fa fa-lock txt-color-teal"></i> Enter your password</b> 
+										</label>
+									</section>
+								</fieldset>
+								<footer>
+									<button type="button" class="btn btn-primary" (click)="login()">
+										Sign in
+									</button>
+									<button type="button" class="btn btn-primary" (click)="isAuth()">
+										Verify
+									</button>
+								</footer>
+							</form>
+
+						</div>
+						
+						<!-- <h5 class="text-center"> - Or sign in using -</h5>
+															
+							<ul class="list-inline text-center">
+								<li>
+									<a href="javascript:void(0);" class="btn btn-primary btn-circle"><i class="fa fa-facebook"></i></a>
+								</li>
+								<li>
+									<a href="javascript:void(0);" class="btn btn-info btn-circle"><i class="fa fa-twitter"></i></a>
+								</li>
+								<li>
+									<a href="javascript:void(0);" class="btn btn-warning btn-circle"><i class="fa fa-linkedin"></i></a>
+								</li>
+							</ul>
+						 -->
+					</div>
+				</div>
+			</div>
+
+		</div>
+
+		<!--================================================== -->	
+
+	    <!-- Link to Google CDN's jQuery + jQueryUI; fall back to local -->
+	    <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+		<script> if (!window.jQuery) { document.write('<script src="js/libs/jquery-2.1.1.min.js"><\/script>');} </script>
+
+	    <!--<script src="//ajax.googleapis.com/ajax/libs/jqueryui/1.10.3/jquery-ui.min.js"></script>
+		<script> if (!window.jQuery.ui) { document.write('<script src="js/libs/jquery-ui-1.10.3.min.js"><\/script>');} </script>-->
+
+
+		<!-- JS TOUCH : include this plugin for mobile drag / drop touch events 		
+		<script src="js/plugin/jquery-touch/jquery.ui.touch-punch.min.js"></script> -->
+
+		<!-- BOOTSTRAP JS -->		
+		<script src="js/bootstrap/bootstrap.min.js"></script>
+		
+		<!--[if IE 8]>
+			
+			<h1>Your browser is out of date, please update your browser by going to www.microsoft.com/download</h1>
+			
+		<![endif]-->
+
+
+	</body>
+</html>

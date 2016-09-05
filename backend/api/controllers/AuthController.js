@@ -154,12 +154,10 @@ var AuthController = {
           res.redirect('/login');
       }
     }
-
     passport.callback(req, res, function (err, user, challenges, statuses) {
       if (err || !user) {
         return tryAgain(challenges);
       }
-
       req.login(user, function (err) {
         if (err) {
           return tryAgain(err);
@@ -167,10 +165,12 @@ var AuthController = {
         
         // Mark the session as authenticated to work with default Sails sessionAuth.js policy
         req.session.authenticated = true
-        
         // Upon successful login, send the user to the homepage were req.user
         // will be available.
-        res.redirect('/');
+        res.json({
+          status: 1,
+          user: user
+        })
       });
     });
   },

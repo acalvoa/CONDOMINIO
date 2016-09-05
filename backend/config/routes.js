@@ -33,6 +33,7 @@ module.exports.routes = {
   ***************************************************************************/
 
   '/': 'HomeController.index',
+  '/test': 'TestController.index',
   'GET /login': 'AuthController.login',
   '/logout': 'AuthController.logout',
   'GET /register': 'AuthController.register',

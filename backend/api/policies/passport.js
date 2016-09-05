@@ -22,6 +22,9 @@
  * @param {Function} next
  */
 module.exports = function (req, res, next) {
+  if(req.isSocket){
+    req = _.extend(req, _.pick(require('http').IncomingMessage.prototype, 'login', 'logIn', 'logout', 'logOut', 'isAuthenticated', 'isUnauthenticated'));
+  } 
   // Initialize Passport
   passport.initialize()(req, res, function () {
     // Use the built-in sessions
