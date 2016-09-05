@@ -8,5 +8,6 @@ export * from './administrador/index';
 export * from './conserje/index';
 export * from './departamento/index';
 export * from './bodega/index';
+export * from './residentes/index';
 export * from './estacionamiento/index';
 export * from './login/index';
